@@ -700,6 +700,78 @@
   .reveal-delay-2 { transition-delay: 0.2s; }
   .reveal-delay-3 { transition-delay: 0.35s; }
   .reveal-delay-4 { transition-delay: 0.5s; }
+
+  /* ─── MOBILE ─── */
+  @media (max-width: 768px) {
+    body { cursor: auto; }
+    .cursor, .cursor-ring { display: none; }
+    .nav-dots { right: 10px; gap: 8px; }
+    .dot { width: 3px; height: 3px; }
+    section { padding: 60px 20px 80px; min-height: 100svh; align-items: flex-start; justify-content: flex-start; flex-direction: column; }
+    .page-num { left: 20px; bottom: 20px; }
+    .display { font-size: clamp(58px, 17vw, 100px); }
+    .display-md { font-size: clamp(34px, 10vw, 60px); }
+    .body-text { font-size: 15px; max-width: 100%; }
+    .cover-tagline { font-size: 15px; }
+    .cover-content { padding-top: 20px; }
+    .orb { display: none; }
+    .cover-scroll-hint { left: 20px; bottom: 20px; }
+    .cover-year { right: 20px; bottom: 20px; }
+    .two-col { grid-template-columns: 1fr !important; gap: 32px !important; direction: ltr !important; width: 100%; }
+    .problem-visual { padding: 20px; }
+    .solution-device { width: 200px; height: 280px; padding: 20px 16px; margin: 0 auto; }
+    .solution-glow { width: 200px; height: 200px; }
+    .device-icon { width: 30px; height: 30px; font-size: 13px; }
+    .device-large { width: 100%; max-width: 300px; height: auto; padding: 24px 20px; margin: 0 auto; }
+    .e-ink-title { font-size: 20px; }
+    .device-specs { padding-left: 0; gap: 10px; }
+    .spec-item { padding: 12px 16px; }
+    .timeline::before { left: 20px; }
+    .timeline-dot { margin-left: 13px; }
+    .timeline-class { font-size: 32px; min-width: 52px; }
+    .timeline-item { gap: 16px; padding: 16px 0; }
+    .timeline-text { font-size: 13px; }
+    .cloud-viz { width: 280px; height: 240px; transform: scale(0.65); transform-origin: top center; margin: 0 auto; }
+    .dashboard { width: 100%; padding: 18px; }
+    .stats-row { gap: 8px; }
+    .stat-num { font-size: 22px; }
+    .stat-lbl { font-size: 9px; }
+    .bar-chart { height: 60px; }
+    .price-cards { grid-template-columns: 1fr; gap: 14px; margin: 28px 0; }
+    .price-card { padding: 24px 20px; }
+    .price-amount { font-size: 52px; }
+    .price-features li { font-size: 13px; }
+    .school-visual { width: 100%; }
+    .school-building { height: 140px; }
+    .school-stats { gap: 8px; }
+    .school-stat { padding: 12px; }
+    .school-stat-num { font-size: 24px; }
+    .quote-mark { font-size: 72px; margin-bottom: 12px; }
+    .quote-text { font-size: clamp(17px, 4vw, 24px); }
+    .cta-bg-text { font-size: clamp(60px, 18vw, 130px); }
+    .cta-buttons { flex-direction: column; align-items: center; gap: 12px; margin-top: 32px; }
+    .btn-primary, .btn-outline { width: 220px; text-align: center; padding: 14px 24px; }
+    .closing-logo { font-size: clamp(48px, 14vw, 90px); }
+    .closing-sub { font-size: 12px; letter-spacing: 0.2em; }
+    .closing-contact { flex-direction: column; gap: 8px; font-size: 12px; }
+    .closing-contact span:nth-child(2),
+    .closing-contact span:nth-child(4) { display: none; }
+    #p3 .two-col { direction: ltr !important; }
+    #p6 .two-col { direction: ltr !important; }
+    #p7 .two-col > div:first-child { order: 2; }
+    #p7 .two-col > div:last-child { order: 1; }
+    .glow-corner { width: 200px; height: 200px; }
+    .pricing-wrap { padding: 0; }
+    .testimonial-wrap { padding: 0 8px; }
+    .cta-wrap { padding: 0 8px; }
+  }
+  @media (max-width: 380px) {
+    section { padding: 48px 16px 68px; }
+    .display { font-size: 15vw; }
+    .display-md { font-size: 11vw; }
+    .solution-device { width: 170px; height: 240px; }
+    .price-amount { font-size: 42px; }
+  }
 </style>
 </head>
 <body>
